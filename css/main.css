@@ -95,7 +95,165 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+html, *{
+    font-family: 'Raleway', sans-serif;
+}
 
+/* SPLASH SCREEN */
+    #fullWrapper{
+        position: absolute;
+        width: 100%;
+        width: calc(100% - 30px);
+        height: 100%;
+        height: calc(100% - 30px);
+        margin: auto;
+        top: 0; bottom: 0; left: 0; right: 0;
+        background-color: #505050;
+    }
+
+        #description{
+            position: absolute;
+            width: 500px;
+            height: 180px;
+            margin: auto;
+            top: 0; bottom: 0; left: 0; right: 0;
+            color: #fff;
+        }
+            #description img{
+                position: relative;
+                float: left;
+                display: inline-block;
+                vertical-align: top;
+                zoom: 1; /* Fix for IE7 */
+                *display: inline; /* Fix for IE7 */
+                width: 100%;
+            }
+
+            #description .tagline{
+                position: relative;
+                float: left;
+                display: inline-block;
+                vertical-align: top;
+                zoom: 1; /* Fix for IE7 */
+                *display: inline; /* Fix for IE7 */
+                width: 100%;
+                height: 84px;
+            }
+                #description .tagline .innerTags{
+                    position: relative;
+                    height: 100%;
+                    float: left;
+                    display: inline-block;
+                    vertical-align: top;
+                    zoom: 1; /* Fix for IE7 */
+                    *display: inline; /* Fix for IE7 */
+                    height: 84px;
+                }
+                    #description .tagline .innerTags h2{
+                        margin: 0;
+                        line-height: 84px;
+                        font-weight: 300;
+                        font-size: 32px;
+                    }
+
+                #description .tagline .leftTag{
+                    width: 48%;
+                    text-align: right;
+                    padding-right: 1.5%;
+                    /*background-color: #ff0000;*/
+                    
+                }
+                #description .tagline .centerTag{
+                    width: 1%;
+                    /*background-color: #00ff00;*/
+                }
+                    #description .tagline .centerTag .circleDiv{
+                        position: absolute;
+                        width: 5px;
+                        height: 5px;
+                        border-radius: 50%;
+                        margin: auto;
+                        top: 0; bottom: 0; left: 0; right: 0;
+                        background-color: #fff;
+                    }
+                #description .tagline .rightTag{
+                    width: 48%;
+                    text-align: left;
+                    padding-left: 1.5%;
+                    /*background-color: #0000ff;*/
+                }
+
+
+        footer {
+            position: absolute;
+            width: 100%;
+            height: 50px;
+            bottom: 15px;
+            overflow: hidden;
+        }
+
+            footer a{
+                position: absolute;
+                width: 100%;
+                display: block;
+                top: 10px;
+                line-height: 50px;
+                color: #fff;
+                text-decoration: none;
+                text-align: center;
+                opacity: .3;
+                filter: alpha(opacity=30);
+
+                -webkit-transition: all .4s ease-in-out;
+                   -moz-transition: all .4s ease-in-out;
+                    -ms-transition: all .4s ease-in-out;
+                     -o-transition: all .4s ease-in-out;
+                        transition: all .4s ease-in-out;
+            }
+                footer a:hover{
+                    opacity: 1;
+                    filter: alpha(opacity=100);
+                    top: 0;
+                }
+/* END SPLASH */
+
+
+/* RESPONSIVE */
+    
+    /* MOBILE */
+    @media (max-width: 767px){
+        #description{
+            width: 80%;
+            height: 110px;
+        }
+
+        #description .tagline{
+            height: 64px;
+        }
+
+        #description .tagline .innerTags{
+            height: 64px;
+        }
+
+        #description .tagline .innerTags h2{
+            font-size: 20px;
+            line-height: 64px;
+        }
+
+        #description .tagline .leftTag{
+            width: 42.5%;
+            padding-right: 5%;
+        }
+        #description .tagline .centerTag{
+            width: 5%;
+        }
+        #description .tagline .rightTag{
+            width: 42.5%;
+            padding-left: 5%;
+        }
+    }
+
+/* END RESPONSIVE */
 
 
 
