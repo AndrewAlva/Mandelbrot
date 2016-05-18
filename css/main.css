@@ -121,10 +121,10 @@ html, *{
         }
             #setBG #firstInnerSet{
                 position: absolute;
-                width: 90vw;
-                height: 90vw;
+                width: 60vw;
+                height: 60vw;
                 border-radius: 50%;
-                border: 1px dashed #cccdd2;
+                border: 1px solid #cccdd2;
                 opacity: .9;
                 /*background-color: rgba(255,255,0,.2);*/
                 top: 50%; left: 50%;
@@ -253,7 +253,7 @@ html, *{
                     position: absolute;
                     width: 61.8%;
                     height: 61.8%;
-                    border: 1px dashed #cccdd2;
+                    border: 1px solid #cccdd2;
                     opacity: .9;
                     /*background-color: rgba(255,255,0,.2);*/
                     border-radius: 0%;
