@@ -25,13 +25,15 @@ html {
  */
 
 ::-moz-selection {
-    background: #b3d4fc;
+    background: #202020;
     text-shadow: none;
+    color: #fff;
 }
 
 ::selection {
-    background: #b3d4fc;
+    background: #202020;
     text-shadow: none;
+    color: #fff;
 }
 
 /*
