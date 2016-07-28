@@ -499,6 +499,48 @@ html, *{
                         top: -64px !important;
                     }
 
+        #rrss{
+            position: absolute;
+            width: 175px;
+            height: 43.75px;
+            margin: auto;
+            left: 0; right: 0;
+            bottom: 50px;
+            z-index: 1000;
+        }
+            #rrss ul{
+                position: relative;
+                width: 100%;
+                height: 100%;
+                padding: 0;
+                margin: 0;
+            }
+
+                #rrss ul li{
+                    position: relative;
+                    width: 25%;
+                    height: 100%;
+                    float: left;
+                    display: inline-block;
+                    vertical-align: top;
+                    zoom: 1; /* Fix for IE7 */
+                    *display: inline; /* Fix for IE7 */
+
+                    -webkit-transition: all .4s ease-in-out;
+                       -moz-transition: all .4s ease-in-out;
+                        -ms-transition: all .4s ease-in-out;
+                         -o-transition: all .4s ease-in-out;
+                            transition: all .4s ease-in-out;
+                }
+                #rrss ul li:hover{
+                    background-color: #fff;
+                    opacity: .7;
+                    filter: alpha(opacity=70);
+                    border-radius: 50%;
+                }
+                    #rrss ul li img{
+                        width: 100%;
+                    }
 
         footer {
             position: absolute;
@@ -576,11 +618,27 @@ html, *{
             width: 47.5%;
         }
 
+        #rrss{
+            width: 160px;
+            height: 40px;
+        }
+
         footer {
             bottom: 20px;
         }
     }
 
+    @media (max-width: 767px) and (orientation:landscape){
+        #description{
+            width: 60%;
+            max-width: 250px;
+            height: 100px;
+        }
+
+        #description .tagline{
+            top: 0px;
+        }
+    }
 /* END RESPONSIVE */
 
 
