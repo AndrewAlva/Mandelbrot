@@ -101,16 +101,33 @@ html, *{
     font-family: 'Raleway', sans-serif;
 }
 
+/* TESTER */
+    #testHeight{
+        position: absolute;
+        width: 100px;
+        height: 100%;
+        box-sizing: border-box;
+        border: 1px solid red;
+    }
+
+    .tenpercent{
+        position: relative;
+        float: left;
+        width: 100%;
+        height: 10%;
+        box-sizing: border-box;
+        border: 1px solid red;
+    }
+
 /* SPLASH SCREEN */
     #fullWrapper{
         position: absolute;
         width: 100%;
-        width: calc(100% - 80px);
         height: 100%;
-        height: calc(100% - 80px);
-        margin: auto;
-        top: 0; bottom: 0; left: 0; right: 0;
-        background-color: #e9ecef;
+        min-height: 480px;
+        top: 0; left: 0;
+        /*background-color: #e9ecef;*/
+        background-color: #fff;
         overflow: hidden;
     }
 
@@ -397,7 +414,7 @@ html, *{
         #description{
             position: absolute;
             width: 500px;
-            height: 180px;
+            height: 280px;
             margin: auto;
             top: 0; bottom: 0; left: 0; right: 0;
             color: #000f1c;
@@ -499,6 +516,44 @@ html, *{
                         top: -64px !important;
                     }
 
+            #description .button{
+                position: relative;
+                border: 1px solid #000f1c;
+                text-align: center;
+                display: table;
+                margin: auto;
+                left: 0; right: 0;
+                top: 50px;
+
+                -webkit-transition: all .6s ease-in-out;
+                   -moz-transition: all .6s ease-in-out;
+                    -ms-transition: all .6s ease-in-out;
+                     -o-transition: all .6s ease-in-out;
+                        transition: all .6s ease-in-out;
+            }
+
+            #description .button:hover{
+                border-radius: 6px;
+                background-color: #fff;
+                border-color: transparent;
+                box-shadow: 0px 5px 9px #D9DDE0;
+            }
+
+                #description .button a{
+                    position: relative;
+                    display: block;
+                    padding: 10px 20px;
+                    text-decoration: none;
+                    color: #000f1c;
+                }
+
+                    #description .button a h3{
+                        margin: 0;
+                        padding: 0;
+                        font-size: 18px;
+                        font-weight: 100;
+                    }
+
         #rrss{
             position: absolute;
             width: 175px;
@@ -534,9 +589,10 @@ html, *{
                 }
                 #rrss ul li:hover{
                     background-color: #fff;
-                    opacity: .7;
-                    filter: alpha(opacity=70);
+                    /*opacity: .7;*/
+                    /*filter: alpha(opacity=70);*/
                     border-radius: 50%;
+                    box-shadow: 0px 5px 9px #D9DDE0;
                 }
                     #rrss ul li img{
                         width: 100%;
@@ -579,9 +635,8 @@ html, *{
     
     /* MOBILE */
     @media (max-width: 767px){
-        #fullWrapper{
-            width: calc(100% - 30px);
-            height: calc(100% - 30px);
+        #setBG{
+            border-width: 15px;
         }
 
         #setBG #firstInnerSet{
@@ -591,32 +646,44 @@ html, *{
 
         #description{
             width: 80%;
-            height: 110px;
+            height: 160px;
         }
 
-        #description .tagline{
-            height: 25px;
-            top: 10px;
-        }
+            #description .tagline{
+                height: 25px;
+                top: 10px;
+            }
 
-        #description .tagline .innerTags{
-            height: 25px;
-        }
+                #description .tagline .innerTags{
+                    height: 25px;
+                }
 
-        #description .tagline .innerTags h2{
-            font-size: 18px;
-            line-height: 25px;
-        }
+                    #description .tagline .innerTags h2{
+                        font-size: 18px;
+                        line-height: 25px;
+                    }
 
-        #description .tagline .leftTag{
-            width: 47.5%;
-        }
-        #description .tagline .centerTag{
-            width: 5%;
-        }
-        #description .tagline .rightTag{
-            width: 47.5%;
-        }
+                #description .tagline .leftTag{
+                    width: 47.5%;
+                }
+                #description .tagline .centerTag{
+                    width: 5%;
+                }
+                #description .tagline .rightTag{
+                    width: 47.5%;
+                }
+
+            #description .button{
+                top: 40px;
+            }
+
+                #description .button a{
+                    padding: 8px 10px;
+                }
+
+                    #description .button a h3{
+                        font-size: 14px;
+                    }
 
         #rrss{
             width: 160px;
@@ -629,14 +696,23 @@ html, *{
     }
 
     @media (max-width: 767px) and (orientation:landscape){
+        #fullWrapper{
+            min-height: 280px;
+        }
+
         #description{
             width: 60%;
             max-width: 250px;
-            height: 100px;
+            height: 160px;
+            top: -50px;
         }
 
         #description .tagline{
             top: 0px;
+        }
+
+        #description .button{
+            top: 20px;
         }
     }
 /* END RESPONSIVE */
